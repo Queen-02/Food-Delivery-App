@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
-        android:id="@+id/tvLogIn"
+        android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amaranth"
-        android:text="Log In"
+        android:text="SignUp"
         android:textColor="#E6121212"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <EditText
-        android:id="@+id/etUser"
+        android:id="@+id/etUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/background_dark"
         android:ems="10"
-        android:hint="UserName/ Email"
+        android:hint="Name"
         android:textColor="@color/black"
         android:inputType="textPersonName"
         android:textColorHint="#C8151515"
@@ -40,6 +40,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#C8151515"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
 
     <EditText
         android:id="@+id/etPhoneNumber"
@@ -56,7 +72,7 @@
         android:textColorHint="#C8151515"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUser" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <EditText
         android:id="@+id/etPWD"
@@ -87,28 +103,26 @@
         app:srcCompat="@drawable/pwd_show" />
 
     <Button
-        android:id="@+id/btnLog"
+        android:id="@+id/btnSignUp"
         android:layout_width="350dp"
         android:layout_height="65dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/splash"
         android:fontFamily="@font/aladin"
-        android:text="Log In"
+        android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:cornerRadius="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPWD"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toBottomOf="@+id/etPWD" />
 
     <Button
         android:id="@+id/btnGoogle"
         android:layout_width="350dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
         android:backgroundTint="@color/cardview_shadow_end_color"
         android:fontFamily="@font/aladin"
         android:text="Sign up with Google"
@@ -116,10 +130,12 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLog"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:layout_constraintVertical_bias="0.093"
         app:strokeColor="@color/splash"
         app:strokeWidth="3dp" />
 
@@ -168,7 +184,7 @@
         android:id="@+id/txLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?"
+        android:text="Already have an account?"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -180,10 +196,10 @@
         app:layout_constraintVertical_bias="0.182" />
 
     <TextView
-        android:id="@+id/tvSign"
+        android:id="@+id/tvLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="LogIn"
         android:textAlignment="textEnd"
         android:textColor="@color/splash"
         android:textSize="20dp"

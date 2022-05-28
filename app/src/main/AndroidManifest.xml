@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodDeliveryApp">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".TeaserActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.splash" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
